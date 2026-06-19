@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" role="img" aria-label="SMARTCyp - containerised cytochrome P450 site-of-metabolism prediction">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b2027"/>
+      <stop offset="0.55" stop-color="#0e3a3f"/>
+      <stop offset="1" stop-color="#10565a"/>
+    </linearGradient>
+    <linearGradient id="rank" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2ecc71"/>
+      <stop offset="0.5" stop-color="#f1c40f"/>
+      <stop offset="1" stop-color="#e67e22"/>
+    </linearGradient>
+    <style>
+      .title { font: 700 76px 'Segoe UI', Helvetica, Arial, sans-serif; fill: #ffffff; }
+      .tag   { font: 400 24px 'Segoe UI', Helvetica, Arial, sans-serif; fill: #b8e0db; letter-spacing: .5px; }
+      .rk    { font: 700 18px 'Segoe UI', Helvetica, Arial, sans-serif; fill: #0b2027; }
+      .bond  { stroke: #5fb6ae; stroke-width: 3; fill: none; opacity: .55; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="300" fill="url(#bg)"/>
+
+  <!-- decorative fused-ring (CYP heme / drug scaffold) motif on the right -->
+  <g transform="translate(965,150)" class="bond">
+    <polygon points="0,-58 50,-29 50,29 0,58 -50,29 -50,-29"/>
+    <polygon points="100,-58 150,-29 150,29 100,58 50,29 50,-29"/>
+    <line x1="-50" y1="-29" x2="-50" y2="29"/>
+    <line x1="50" y1="-29" x2="50" y2="29"/>
+    <line x1="-38" y1="-22" x2="-38" y2="22"/>
+    <line x1="38" y1="-22" x2="38" y2="22"/>
+  </g>
+
+  <!-- ranked sites of metabolism -->
+  <g>
+    <circle cx="915" cy="121" r="20" fill="url(#rank)"/>
+    <text x="915" y="127" text-anchor="middle" class="rk">1</text>
+    <circle cx="1115" cy="121" r="18" fill="#f1c40f"/>
+    <text x="1115" y="127" text-anchor="middle" class="rk">2</text>
+    <circle cx="1015" cy="208" r="16" fill="#e67e22"/>
+    <text x="1015" y="214" text-anchor="middle" class="rk">3</text>
+  </g>
+
+  <text x="70" y="150" class="title">SMARTCyp</text>
+  <text x="73" y="192" class="tag">Containerised cytochrome P450 site-of-metabolism prediction</text>
+  <rect x="73" y="212" width="470" height="3" fill="url(#rank)"/>
+</svg>
